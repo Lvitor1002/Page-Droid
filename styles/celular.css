@@ -1,0 +1,114 @@
+@charset "UFT-8";
+
+
+@media screen and (max-width: 660px){
+    .lista ul li p{
+        padding: 0 9px !important;
+    }
+    .controleIrina img{
+        width: 450px !important;
+    }
+    
+   
+}
+@media screen and (max-width: 550px){
+    .lista ul li p{
+        font-size: 21px !important;
+    }
+    .controleIrina img{
+        width: 350px !important;
+    }
+    nav a{
+        color: rgba(255, 255, 255, 0.473);
+        font-size: 15px;
+    }
+    nav a:hover{
+        color: rgb(255, 255, 255);
+    }
+    
+    
+   
+}
+
+
+/*Tablet */
+@media screen and (max-width: 1400px){
+
+    /*                                    CONTEÚDO                                          */
+    
+    .lista ul{
+        gap: 0px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1125px){
+
+
+    /*      IMAGENS     */
+
+    .controleIrina img{
+        border-radius: 30px;
+        width: 550px;
+    }
+    .controleIrina{
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        transform: scale(1.09);
+
+        height: auto; /* Mantém a proporção */
+        position: relative; /* Para o funcionamento do [FLUTUAR] */
+        animation: flutuar
+                    2s         /* 2s de duração da animação */
+                    ease-in-out/* início e fim suave, rápido no centro*/
+                    infinite   /* Mantém em loop */
+                    alternate; /* Mantém alternando - ajuda na suavidade */
+
+        transition: 1s;
+    }
+
+    @keyframes flutuar {
+        0%{
+            top: 0;
+        }
+        100%{
+            top: 40px;
+        }
+    }
+    .Irina{
+        display: none;/*Oculta img maior*/
+    }
+    
+    p#ppp{
+        padding-top: 90px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1005px){
+
+    .lista ul li p{
+        padding: 0 1px;
+        
+    }
+    
+}
+@media screen and (max-width: 900px){
+
+    .lista ul{
+        columns: 1; /*Duas colunas*/
+        
+    }
+    .lista ul li p{
+        padding: 0 100px;
+        
+    }
+    
+}
+

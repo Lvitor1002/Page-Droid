@@ -1,0 +1,299 @@
+@charset "UFT-8";
+
+
+/*
+    CORES:
+
+            VERDE ESCURO: #258852;
+            VERDE MEDIO:  #3DDC84;
+            VERDE FRACO: #3ddc857e;
+    
+*/
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'FonteDroid', sans-serif;
+    
+}
+body{
+    height: 100vh;
+    background-color:  #87e7b233;
+    color: black;
+    
+}
+.Interface{
+    max-width: 1280px;
+    margin: 0 auto;
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*                                    CABEÇALHO                                           */
+header{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 24px -8px black;
+}
+    
+.TituloMenu{
+    background-color:#3ddc85e8;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    padding: 25px 0;
+}
+.TituloMenu h1{
+    font-size: 30px;
+    
+}
+.TituloMenu p{
+    font-size: 20px;
+    padding: 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color:  #258852;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5%;
+    flex-flow: row wrap;
+    padding: 2px 0;
+}
+nav a{
+    color: aliceblue;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+    transition: all 1s;
+}
+nav a:hover{
+    transform: scale(1.19);
+    transition-duration: 1s;
+}
+
+
+/*                                    CONTEÚDO                                          */
+.Conteudo{
+    padding: 10px 4%;
+}
+
+.Conteudo .Interface h2{
+    padding: 10px 0;
+    font-size: 22px;
+    
+}
+.Conteudo .Interface p{
+    text-indent: 20px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 35px;
+    text-decoration: none;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+.Conteudo .Interface p a{
+    text-decoration: none;
+    padding: 0 5px;
+    font-size: 18px;
+    color: #258852;
+    border-radius: 30px;
+    border: .5px solid #25885141;
+    font-weight: 600;
+    transition: all 1s;
+}
+.Conteudo .Interface p a:hover{
+    background-color: white;
+    transition-duration: 1s;
+}
+.Conteudo .Interface p#link{
+    text-indent: 0;
+    padding: 5px 0;
+    padding-bottom: 40px;
+}
+.Interface h2#h2rp{
+    padding-top: 40px;
+}
+.controleLista{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding-top: 20px;
+    
+    transition: all 2s;
+    
+}
+
+.controleLista:hover{
+    background-color: #165e36;
+    border: 2px solid rgb(255, 255, 255);
+    transition-duration: 2s;
+
+}
+
+.lista ul{
+    
+    list-style-type:none;
+    columns: 2; /*Duas colunas*/
+    list-style-position: inside;
+    border-radius: 50px;
+    gap: 350px; /*Deixando as duas colunas nos extremos*/
+    
+    transition: all 2s;
+}
+.lista ul:hover{
+    transform: scale(1.01);
+    color: white;
+    
+    transition-duration: 2s;
+}
+
+
+.lista ul li{
+    height: 60px;
+    white-space: nowrap; /* Evita quebra de linha */
+    
+}
+
+.lista ul li p{
+    border-radius: 50px;
+    padding: 0 45px;
+    height: 40px;
+    flex-direction: row;
+    transition: all 1s;
+}
+.lista ul li p:hover{
+    background-color: #ffffff;
+    color: #165e36;
+    transform: scale(1.01);
+    transition-duration: 1s;
+}
+
+.Interface p#pr{
+    padding-top: 50px;
+}
+
+
+
+/*      IMAGENS     */
+
+picture#img1 {
+    text-align: center;
+    background-repeat: no-repeat;
+    flex-flow: column wrap;
+    transform: scale(1.09); /*Aumenta a img*/
+}
+
+#imgIrina{
+    background-image: url(../image/irinaMaior.jpg);
+}
+
+.Irina{
+    padding: 240px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+    
+
+    height: auto; /* Mantém a proporção */
+    position: relative; /* Para o funcionamento do [FLUTUAR] */
+    animation: flutuar
+               2s         /* 2s de duração da animação */
+               ease-in-out/* início e fim suave, rápido no centro*/
+               infinite   /* Mantém em loop */
+               alternate; /* Mantém alternando - ajuda na suavidade */
+    
+    transition: 1s;
+    
+}
+.Irina:hover{
+    transform: scale(1.02);}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 75px;
+    }
+}
+.controleIrina{
+    
+    display: none; /*Oculta img menor*/
+}
+.Interface p#pd{
+    padding-top: 25px;
+}
+.controleDroid{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.Droid{
+    transform: scale(0.9);
+    border: .1px solid #2588512a;
+    border-radius: 100%;
+    width: 320px;
+    
+    
+    transition: all 10s;
+
+
+}
+.Droid:hover{
+    transition-duration: 1s;
+    transform: scale(1.2);
+    border: .2px solid #258851;
+
+}
+.Interface .video{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 40px 0;
+    transition: all 50s;
+    border-radius: 30px;
+}
+.Interface .video:hover{
+    background-color: #000000;
+    transition-duration: 2s;
+}
+
+
+
+/*                                    RODAPÉ                                          */
+
+
+footer p{
+    
+    background-color: #258852;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 0;
+    box-shadow: 0px -1px 52px -1px rgba(0, 0, 0, 0.473);
+    color: white;
+    font-weight: bolder;
+}
+footer p a{
+    text-decoration: none;
+    color:  #ffffff;
+    text-decoration: overline;
+    transition: all 5s;
+}
+footer p a:hover{
+    transition-duration: 2s;
+    text-decoration: underline;
+    color: #000000;
+    
+}
