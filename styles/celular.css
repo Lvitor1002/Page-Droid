@@ -16,7 +16,7 @@
         font-size: 21px !important;
     }
     .controleIrina img{
-        width: 350px !important;
+        width: 320px !important;
     }
     nav a{
         color: rgba(255, 255, 255, 0.473);
@@ -24,6 +24,18 @@
     }
     nav a:hover{
         color: rgb(255, 255, 255);
+    }
+    p#sandu{
+        font-size: 17.5px!important;
+    }
+    p#jujuba{
+        font-size: 17.5px!important;
+        transform: none;
+    }
+    .Interface picture#img1{
+        transform: scale(.9);
+        position: relative;
+        right: 42px;
     }
     
     
